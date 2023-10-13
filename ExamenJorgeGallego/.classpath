@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/commons-collections4-4.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/commons-compress-1.19.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/commons-math3-3.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/fontbox-2.0.18.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/jxl.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/pdfbox-2.0.18.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/pdfbox-app-2.0.18.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/pdfbox-tools-2.0.18.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/poi-4.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/poi-examples-4.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/poi-excelant-4.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/poi-ooxml-4.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/poi-ooxml-schemas-4.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/poi-scratchpad-4.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/preflight-2.0.18.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/preflight-app-2.0.18.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/xmlbeans-3.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/xmpbox-2.0.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFbox/fontbox-2.0.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFbox/pdfbox-2.0.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFbox/pdfbox-app-2.0.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFbox/pdfbox-tools-2.0.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFbox/preflight-2.0.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFbox/preflight-app-2.0.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFbox/xmpbox-2.0.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFExcel/commons-collections4-4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFExcel/commons-compress-1.19.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFExcel/commons-math3-3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFExcel/jxl.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFExcel/poi-4.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFExcel/poi-examples-4.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFExcel/poi-excelant-4.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFExcel/poi-ooxml-4.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFExcel/poi-ooxml-schemas-4.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFExcel/poi-scratchpad-4.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFExcel/xmlbeans-3.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFWord/commons-compress-1.19.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFWord/poi-4.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFWord/poi-examples-4.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFWord/poi-excelant-4.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFWord/poi-ooxml-4.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFWord/poi-ooxml-schemas-4.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFWord/poi-scratchpad-4.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jorge/Jlibrerias/PDFWord/xmlbeans-3.1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

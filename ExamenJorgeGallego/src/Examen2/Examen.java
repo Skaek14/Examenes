@@ -1,4 +1,4 @@
-package Examen2;
+  package Examen2;
 
 import java.awt.EventQueue;
 import javax.swing.JFrame;
@@ -116,7 +116,7 @@ public class Examen extends JFrame {
 		Abrirfichero.setFont(new Font("Tahoma", Font.BOLD, 16));
 		Abrirfichero.setBounds(175, 81, 203, 30);
 		contentPane.add(Abrirfichero);
-
+ 
 		Gentxt = new JButton("Generar TXT");
 		Gentxt.setFont(new Font("Tahoma", Font.BOLD, 16));
 		Gentxt.setBounds(33, 148, 203, 30);

@@ -10,8 +10,10 @@ import javax.swing.JOptionPane;
 
 import java.awt.Font;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -43,6 +45,7 @@ public class Examen extends JFrame {
 	public static int contadorhu=0;
 	public static int contadorza=0;
 	public static int contadorte=0;
+	String pri;
 	static ArrayList<String> provincia = new ArrayList<String>();
 	static ArrayList<String> año = new ArrayList<String>();
 	static ArrayList<String> ccaa = new ArrayList<String>();
@@ -213,7 +216,19 @@ public class Examen extends JFrame {
 		Gentxt.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				
+				try {
+					 pri = provincia.toString();
+					if (pri.equals("[]")) {
+						lresul.setText("Debe abrir primero el Fichero");
+					}else {
+						BufferedWriter p = new BufferedWriter(new FileWriter("D:/provincias.txt", false));
+						BufferedWriter c = new BufferedWriter(new FileWriter("D:/comunidades.txt", false));
+						BufferedWriter a = new BufferedWriter(new FileWriter("D:/anos.txt", false));
+						BufferedWriter t = new BufferedWriter(new FileWriter("D:/total_pro.txt", false));
+					}
+				} catch (Exception e2) {
+					// TODO: handle exception
+				}
 			}
 		});
 		Gentxt.setFont(new Font("Tahoma", Font.BOLD, 16));

@@ -1,5 +1,6 @@
   package Examen2;
 
+import java.awt.Desktop;
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -45,6 +46,8 @@ public class Examen extends JFrame {
 	public static int contadorhu=0;
 	public static int contadorza=0;
 	public static int contadorte=0;
+	public static int contadorproductos=0;
+
 	String pri;
 	static ArrayList<String> provincia = new ArrayList<String>();
 	static ArrayList<String> año = new ArrayList<String>();
@@ -90,7 +93,7 @@ public class Examen extends JFrame {
 				provincia.add(String.valueOf(cadena.charAt(0)));
 				año.add(String.valueOf(cadena.charAt(cadena.length()-3)) + cadena.charAt(cadena.length()-2));
 				ccaa.add(String.valueOf(cadena.charAt(cadena.length()-1)));
-				
+				contadorproductos++;
 				
 				
 			if(cadena.contains("E")) {
@@ -225,7 +228,55 @@ public class Examen extends JFrame {
 						BufferedWriter c = new BufferedWriter(new FileWriter("D:/comunidades.txt", false));
 						BufferedWriter a = new BufferedWriter(new FileWriter("D:/anos.txt", false));
 						BufferedWriter t = new BufferedWriter(new FileWriter("D:/total_pro.txt", false));
+					
+					for (int i = 0; i < provincias.length; i++) {
+						if (provincias[i].equals("B")) {
+							provincias[i] = "Badajoz";
+						} else if (provincias[i].equals("C")) {
+							provincias[i] = "Cáceres ";
+						} else if (provincias[i].equals("Z")) {
+							provincias[i] = "Zaragoza";
+						} else if (provincias[i].equals("H")) {
+							provincias[i] = "Huesca";
+						} else if (provincias[i].equals("T")) {
+							provincias[i] = "Teruel";
+						}
+						
 					}
+					
+					for (int j = 0; j < ccaas.length; j++) {
+						if(ccaas[j].equals("E")){
+							ccaas[j]="Extremadua";
+						}else if(ccaas[j].equals("A")) {
+							ccaas[j]="Aragon";
+						}
+					}
+					
+					p.write("Provincias\n----------\n");
+					for (int i = 0; i < provincias.length; i++) {
+						p.write(provincias[i]+ "\n");
+					}
+					c.write("CCAA\n----\n");
+					for (int i = 0; i < ccaas.length; i++) {
+						c.write(ccaas[i] + "\n");
+					}
+					a.write("Años\n----\n");
+					for (int i = 0; i < anos.length; i++) {
+						a.write(anos[i] + "\n");
+					}
+					t.write("Total productos: " + contadorproductos + "\n\nTotal productos Extremadura: "
+							+ contadorex + "\n\tProductos Badajoz: " + contadorba + "\n\tProductos Cáceres: "
+							+ contadorca + "\n\nTotal productos Aragón: " + contadorar + "\n\tProductos Huesca: "
+							+ contadorhu + "\n\tProductos Zaragoza: " + contadorza + "\n\tProductos Teruel: "
+							+ contadorte);
+					
+					p.close();
+					c.close();
+					a.close();
+					t.close();
+					lresul.setText("Ficheros generados");
+					}
+					
 				} catch (Exception e2) {
 					// TODO: handle exception
 				}
@@ -236,6 +287,19 @@ public class Examen extends JFrame {
 		contentPane.add(Gentxt);
 
 		abrirfichs = new JButton("Abrir todos los ficheros\r\n");
+		abrirfichs.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				try {
+					Desktop.getDesktop().open(new File("D:/provincias.txt"));
+					Desktop.getDesktop().open(new File("D:/comunidades.txt"));
+					Desktop.getDesktop().open(new File("D:/anos.txt"));
+					Desktop.getDesktop().open(new File("D:/total_pro.txt"));
+				} catch (IOException e1) {
+					lresul.setText("Error al abrir los ficheros");
+				}
+			}
+		});
 		abrirfichs.setFont(new Font("Tahoma", Font.BOLD, 16));
 		abrirfichs.setBounds(154, 219, 235, 30);
 		contentPane.add(abrirfichs);

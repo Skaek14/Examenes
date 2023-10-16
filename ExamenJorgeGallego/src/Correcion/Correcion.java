@@ -292,14 +292,7 @@ public class Correcion extends JFrame {
 		babrirficheros = new JButton("Abrir todos los ficheros");
 		babrirficheros.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				try {
-					Desktop.getDesktop().open(new File("D:/provincias.txt"));
-					Desktop.getDesktop().open(new File("D:/comunidades.txt"));
-					Desktop.getDesktop().open(new File("D:/anos.txt"));
-					Desktop.getDesktop().open(new File("D:/total_pro.txt"));
-				} catch (IOException e1) {
-					lresul.setText("Error al abrir los ficheros");
-				}
+	 
 			}
 		});
 		babrirficheros.setFont(new Font("Tahoma", Font.BOLD, 16));
